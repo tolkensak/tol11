@@ -6,8 +6,9 @@
 [![Language: C++](https://img.shields.io/badge/language-C%2B%2B-blue.svg)]()
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows-lightgrey.svg)]()
 [![Version: 1.1](https://img.shields.io/badge/version-1.1-green.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+<br />
 
 ## Overview
 
@@ -15,7 +16,7 @@
 
 The library has been actively developed and maintained since **2007** and supports multiple generations of Microsoft Visual Studio compilers.
 
----
+<br />
 
 ## Libraries
 
@@ -27,7 +28,7 @@ The library has been actively developed and maintained since **2007** and suppor
 | **tolmysql** | C++ | MySQL wrappers and operations — simplified database access |
 | **tolxml** | C++ | XML parsing and serialization |
 
----
+<br />
 
 ## Folder Structure
 
@@ -47,7 +48,7 @@ The repository is organized by **Visual Studio version**, reflecting the project
 
 Each version folder contains the project configuration for that compiler.
 
----
+<br />
 
 ## Requirements
 
@@ -56,7 +57,7 @@ Each version folder contains the project configuration for that compiler.
 - **MySQL** (for `tolmysql`)
 - Optional: **Windows CE** support for embedded targets
 
----
+<br />
 
 ## Installation
 
@@ -70,6 +71,8 @@ Each version folder contains the project configuration for that compiler.
 3.  Build the libraries you need (each library is a separate project).
 
 4. Add the inc/ folder to your include path and link against the built libraries.
+
+<br />
 
 ## Example Usage
 
@@ -97,6 +100,8 @@ int main()
 }
 ```
 
+<br />
+
 ## Design Principles
 
 - DRY (Don't Repeat Yourself) — shared functionality lives in one place
@@ -107,25 +112,26 @@ int main()
 
 - Minimal dependencies — no external libraries beyond the platform and MySQL
 
+<br />
+
 ## History
 
-The library has evolved over nearly two decades of active use in production systems:
+| Year | Milestone |
+|--- |---|
+| 2007 | Project started — tolc C core library |
+| 2009 | Visual Studio 2008 support; tolcpp classes added |
+| 2015 | Visual Studio 2015 support |
+| 2017 | Visual Studio 2017 support |
+| 2019 | Visual Studio 2019 support |
+| 2026 | Version 1.1 released publicly on GitHub |
 
-| Period | Focus |
-|--------|-------|
-| **2007–2010** | Foundation — `tolc` core library (C), early `tolcpp` classes |
-| **2010–2013** | MFC extensions (`tolmfc`) for Windows GUI applications |
-| **2013–2016** | `tolmysql` — database wrappers for enterprise systems |
-| **2016–2020** | `tolxml` — XML processing for data interchange |
-| **2020–present** | Modernization — C++11/14/17 compatibility, Visual Studio 2019+ support |
-
-**Version 1.1** — current release, published publicly on GitHub in 2026.
-
-The library was used across multiple projects in railway automation, warehouse management, GIS, and enterprise reporting systems.
+<br />
 
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+<br />
 
 ## Contact
 
