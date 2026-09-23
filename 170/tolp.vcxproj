@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="dll-dbg|Win32">
+      <Configuration>dll-dbg</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-dbg|x64">
+      <Configuration>dll-dbg</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-opt|Win32">
+      <Configuration>dll-opt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-opt|x64">
+      <Configuration>dll-opt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-dbg|Win32">
+      <Configuration>lib-dbg</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-dbg|x64">
+      <Configuration>lib-dbg</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-opt|Win32">
+      <Configuration>lib-opt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-opt|x64">
+      <Configuration>lib-opt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>tolp11</ProjectName>
+    <ProjectGuid>{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}</ProjectGuid>
+    <RootNamespace>tolp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|Win32'">
+    <OutDir>lib\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <TargetName>lib$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|Win32'">
+    <OutDir>lib\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'">
+    <OutDir>bin\$(Platform)\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\$(Platform)\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|Win32'">
+    <OutDir>bin\$(Platform)\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Platform)\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|x64'">
+    <OutDir>lib\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|x64'">
+    <OutDir>lib\</OutDir>
+    <IntDir>int\$(Platform)\$(RootNamespace)\$(Configuration)\</IntDir>
+    <TargetName>lib$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_USRDLL;_DEBUG</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-dbg|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_USRDLL;_DEBUG</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_USRDLL;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-opt|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_USRDLL;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;_DEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>..\prj\$(RootNamespace)\module.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <DataExecutionPrevention />
+      <ImportLibrary>lib\$(Platform)\$(TargetName).lib</ImportLibrary>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;_DEBUG</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>..\prj\$(RootNamespace)\module.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>lib\$(Platform)\$(TargetName).lib</ImportLibrary>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>..\prj\$(RootNamespace)\module.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>lib\$(Platform)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-opt|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>lib\%(Platform)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>..\prj\$(RootNamespace)\module.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>lib\$(Platform)\$(TargetName).lib</ImportLibrary>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\prj\tolp\dllmain.cpp" />
+    <ClCompile Include="..\prj\tolp\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='lib-opt|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='lib-opt|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-opt|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-opt|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='lib-dbg|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='lib-dbg|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_array.cpp" />
+    <ClCompile Include="..\src\tolp_array_ptr.cpp" />
+    <ClCompile Include="..\src\tolp_exception.cpp" />
+    <ClCompile Include="..\src\tolp_ini.cpp" />
+    <ClCompile Include="..\src\tolp_list.cpp" />
+    <ClCompile Include="..\src\tolp_map.cpp" />
+    <ClCompile Include="..\src\tolp_massive.cpp" />
+    <ClCompile Include="..\src\tolp_object.cpp" />
+    <ClCompile Include="..\src\tolp_pair.cpp" />
+    <ClCompile Include="..\src\tolp_point3d.cpp" />
+    <ClCompile Include="..\src\tolp_pointer.cpp" />
+    <ClCompile Include="..\src\tolp_string.cpp" />
+    <ClCompile Include="..\src\tolp_stringa.cpp" />
+    <ClCompile Include="..\src\tolp_stringw.cpp" />
+    <ClCompile Include="..\src\tolp_text.cpp" />
+    <ClCompile Include="..\src\tolp_textread.cpp" />
+    <ClCompile Include="..\src\tolp_textwrite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\tol.h" />
+    <ClInclude Include="..\inc\tolp.h" />
+    <ClInclude Include="..\inc\tolp_array.h" />
+    <ClInclude Include="..\inc\tolp_array_ptr.h" />
+    <ClInclude Include="..\inc\tolp_exception.h" />
+    <ClInclude Include="..\prj\tolp\resource.h" />
+    <ClInclude Include="..\prj\tolp\stdafx.h" />
+    <ClInclude Include="..\prj\tolp\targetver.h" />
+    <CustomBuild Include="..\inc\tolp_ini.h" />
+    <ClInclude Include="..\inc\tolp_list.h" />
+    <CustomBuild Include="..\inc\tolp_map.h" />
+    <ClInclude Include="..\inc\tolp_massive.h" />
+    <ClInclude Include="..\inc\tolp_object.h" />
+    <ClInclude Include="..\inc\tolp_pair.h" />
+    <ClInclude Include="..\inc\tolp_point3d.h" />
+    <CustomBuild Include="..\inc\tolp_pointer.h" />
+    <CustomBuild Include="..\inc\tolp_string.h" />
+    <CustomBuild Include="..\inc\tolp_stringa.h" />
+    <CustomBuild Include="..\inc\tolp_stringw.h" />
+    <CustomBuild Include="..\inc\tolp_text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\inc\tolp_array.inl" />
+    <None Include="..\inc\tolp_array_ptr.inl" />
+    <None Include="..\inc\tolp_exception.inl" />
+    <None Include="..\inc\tolp_list.inl" />
+    <CustomBuild Include="..\inc\tolp_map.inl" />
+    <CustomBuild Include="..\inc\tolp_massive.inl" />
+    <CustomBuild Include="..\inc\tolp_object.inl" />
+    <None Include="..\inc\tolp_pair.inl" />
+    <None Include="..\inc\tolp_point3d.inl" />
+    <CustomBuild Include="..\inc\tolp_pointer.inl" />
+    <CustomBuild Include="..\inc\tolp_stringa.inl" />
+    <CustomBuild Include="..\inc\tolp_stringw.inl" />
+    <CustomBuild Include="..\inc\tolp_text.inl" />
+    <None Include="..\prj\tolp\module.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="tolc.vcxproj">
+      <Project>{f2917abc-b3f3-4751-a21d-eeafba9e123e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\prj\tolp\dll.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Library">
+      <UniqueIdentifier>{948ab6b4-42ff-4e67-a72d-8912b46424bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{69b22e58-09bd-4ae5-ba8a-6090006b01e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Library">
+      <UniqueIdentifier>{3388dda9-3abb-4741-8eab-c020c34f9b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project">
+      <UniqueIdentifier>{1cbdf070-0233-48a6-a245-830417b28204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\tolxml_doc.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolxml_util.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolxml\dllmain.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolxml\stdafx.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\tol.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolxml.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolxml_doc.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolxml_util.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolxml\resource.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolxml\stdafx.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolxml\targetver.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\inc\tolxml_doc.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\prj\tolxml\module.def">
+      <Filter>Source Files\Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\prj\tolxml\dll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

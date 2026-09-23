@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Library">
+      <UniqueIdentifier>{433d0b3f-3eca-4f4a-af68-4817d4062e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{d6b9d96a-fbc5-4916-9f2a-6cbaf6b729e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Project">
+      <UniqueIdentifier>{c0eaf88e-3a2c-4842-a644-9f123109160b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Library">
+      <UniqueIdentifier>{67b17975-3a58-4b77-8e44-0897dc1f9144}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\tolp_array.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_array_ptr.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_exception.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_ini.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_list.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_map.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_massive.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_object.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_pair.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_point3d.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_pointer.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_string.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_stringa.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_stringw.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_text.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_textread.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolp_textwrite.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolp\dllmain.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolp\stdafx.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\tol.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_array.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_array_ptr.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_exception.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_list.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_massive.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_object.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_pair.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolp_point3d.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolp\resource.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolp\stdafx.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolp\targetver.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\inc\tolp_array.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolp_array_ptr.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolp_exception.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolp_list.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolp_pair.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolp_point3d.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\prj\tolp\module.def">
+      <Filter>Source Files\Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\inc\tolp_ini.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_map.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_map.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_massive.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_object.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_pointer.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_pointer.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_string.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_stringa.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_stringa.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_stringw.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_stringw.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_text.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\inc\tolp_text.inl">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\prj\tolp\dll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

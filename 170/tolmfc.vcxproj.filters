@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Library">
+      <UniqueIdentifier>{5d0a5c36-c10b-4820-9a75-2b01744e97ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{5d36d62b-3d15-4026-9f13-f239ffbe52b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Library">
+      <UniqueIdentifier>{f29995c4-c7bd-4251-97e6-544ba3f346e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project">
+      <UniqueIdentifier>{1155657f-a943-410a-b9d8-20b550db0000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\tolmfc_aboutdlg.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_combobox.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_ctrlbar.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_ctrlbar_ctrl.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_ctrlbar_grip.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_ctrlbar_size.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_ctrlbar_view.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_gl.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_gridctrl.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_gridctrl_column.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_gridctrl_fit.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_mainwnd.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_mainwnd_lang.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_memdc.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_SDIMV_MainWnd.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_SDIMV_MainWnd_Lang.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_SDIMV_WinApp.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_SDIMV_WinApp_Lang.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_splitter.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_toolbar.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_trackmouse.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_util.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_view.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_view_form.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_view_list.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_view_scroll.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_winapp.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tolmfc_winapp_lang.cpp">
+      <Filter>Source Files\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolmfc\dllmain.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\prj\tolmfc\stdafx.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\tol.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_aboutdlg.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_ctrlbar.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_ctrlbar_ctrl.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_ctrlbar_grip.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_ctrlbar_size.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_ctrlbar_view.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_gl.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_gridctrl.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_gridctrl_column.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_gridctrl_fit.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_mainwnd.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_mainwnd_lang.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_memdc.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_SDIMV_MainWnd.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_SDIMV_MainWnd_Lang.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_SDIMV_WinApp.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_SDIMV_WinApp_Lang.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_splitter.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_toolbar.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_trackmouse.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_util.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_view.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_view_form.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_view_list.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_view_scroll.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_winapp.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tolmfc_winapp_lang.h">
+      <Filter>Header Files\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolmfc\resource.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolmfc\stdafx.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\prj\tolmfc\targetver.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\inc\tolmfc_gridctrl.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_gridctrl_column.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_SDIMV_WinApp_Lang.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_splitter.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_trackmouse.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_util.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\inc\tolmfc_winapp_lang.inl">
+      <Filter>Header Files\Library</Filter>
+    </None>
+    <None Include="..\prj\tolmfc\module.def">
+      <Filter>Source Files\Project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\inc\tolmfc_combobox.h">
+      <Filter>Header Files\Library</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\prj\tolmfc\dll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
