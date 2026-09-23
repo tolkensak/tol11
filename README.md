@@ -73,7 +73,7 @@ Each version folder contains the project configuration for that compiler.
 
 ## Example Usage
 
-**tolc (Pure C)**
+**Using tolc (Pure C)**
 
 ```c
 #include <stdio.h>
@@ -120,7 +120,7 @@ int main()
 
 ## License
 
-(Add a license — e.g., MIT, Apache 2.0, or "All rights reserved." Without a license, others legally cannot use your code.)
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
