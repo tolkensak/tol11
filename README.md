@@ -126,8 +126,8 @@ int main()
 
 **Tolkyn Akhmetollauly**
 
-- **GitHub:** [@tolkensak](@tolkensak)
+- GitHub: [@tolkensak](https://github.com/tolkensak)
 
-- **Portfolio:** [tolkensak.github.io/tolkensak](tolkensak.github.io/tolkensak)
+- Portfolio: [tolkensak.github.io/tolkensak](https://tolkensak.github.io/tolkensak)
 
-- **LinkedIn:** [linkedin.com/in/tolkyn-akhmetollauly-0a3873a9](linkedin.com/in/tolkyn-akhmetollauly-0a3873a9)
+- LinkedIn: [linkedin.com/in/tolkyn-akhmetollauly-0a3873a9](https://www.linkedin.com/in/tolkyn-akhmetollauly-0a3873a9)
