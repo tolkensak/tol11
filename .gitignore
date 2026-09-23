@@ -1,0 +1,19 @@
+
+# intermediate files
+int/
+.vs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+*.log
+
+# Workspace files
+*.code-workspace
