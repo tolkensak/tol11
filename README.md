@@ -109,14 +109,19 @@ int main()
 
 ## History
 
-| Year | Milestone |
-|---|---|
-| 2007 | Project started |
-| 2009 | Visual Studio 2008 |
-| 2015 | Visual Studio 2015 |
-| 2017 | Visual Studio 2017 |
-| 2018 | Visual Studio 2019 |
-| 2026 | Version 1.1 released publicly on GitHub |
+The library has evolved over nearly two decades of active use in production systems:
+
+| Period | Focus |
+|--------|-------|
+| **2007–2010** | Foundation — `tolc` core library (C), early `tolcpp` classes |
+| **2010–2013** | MFC extensions (`tolmfc`) for Windows GUI applications |
+| **2013–2016** | `tolmysql` — database wrappers for enterprise systems |
+| **2016–2020** | `tolxml` — XML processing for data interchange |
+| **2020–present** | Modernization — C++11/14/17 compatibility, Visual Studio 2019+ support |
+
+**Version 1.1** — current release, published publicly on GitHub in 2026.
+
+The library was used across multiple projects in railway automation, warehouse management, GIS, and enterprise reporting systems.
 
 ## License
 
