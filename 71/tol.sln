@@ -1,0 +1,109 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tolc11", "tolc.vcproj", "{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tolp11", "tolp.vcproj", "{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E} = {F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tolmfc11", "tolmfc.vcproj", "{279BA2F5-5259-4337-8FFD-6460C94A23C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E} = {F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6} = {73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tolmysql11", "tolmysql.vcproj", "{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6} = {73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		dll-dbg = dll-dbg
+		dll-opt = dll-opt
+		lib-dbg = lib-dbg
+		lib-opt = lib-opt
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-dbg.ActiveCfg = dll-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-dbg.Build.0 = dll-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-opt.ActiveCfg = dll-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-opt.Build.0 = dll-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-dbg.ActiveCfg = lib-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-dbg.Build.0 = lib-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opt.ActiveCfg = lib-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opt.Build.0 = lib-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-dbg.ActiveCfg = dll-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-dbg.Build.0 = dll-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-opt.ActiveCfg = dll-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-opt.Build.0 = dll-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-dbg.ActiveCfg = lib-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-dbg.Build.0 = lib-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opt.ActiveCfg = lib-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opt.Build.0 = lib-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-dbg.ActiveCfg = dll-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-dbg.Build.0 = dll-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-opt.ActiveCfg = dll-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-opt.Build.0 = dll-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-dbg.ActiveCfg = lib-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-dbg.Build.0 = lib-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opt.ActiveCfg = lib-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opt.Build.0 = lib-opt|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.dll-dbg.ActiveCfg = dll-dbg|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.dll-dbg.Build.0 = dll-dbg|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.dll-opt.ActiveCfg = dll-opt|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.dll-opt.Build.0 = dll-opt|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.lib-dbg.ActiveCfg = lib-dbg|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.lib-dbg.Build.0 = lib-dbg|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.lib-opt.ActiveCfg = lib-opt|Win32
+		{BC82BABC-F1BC-45aa-BE13-8D381FF0B1F1}.lib-opt.Build.0 = lib-opt|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		dll-dbg|Win32 = dll-dbg|Win32
+		dll-opt|Win32 = dll-opt|Win32
+		lib-dbg|Win32 = lib-dbg|Win32
+		lib-opt|Win32 = lib-opt|Win32
+		lib-opts|Win32 = lib-opts|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-dbg|Win32.ActiveCfg = dll-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-dbg|Win32.Build.0 = dll-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-opt|Win32.ActiveCfg = dll-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.dll-opt|Win32.Build.0 = dll-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-dbg|Win32.ActiveCfg = lib-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-dbg|Win32.Build.0 = lib-dbg|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opt|Win32.ActiveCfg = lib-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opt|Win32.Build.0 = lib-opt|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opts|Win32.ActiveCfg = lib-opts|Win32
+		{F2917ABC-B3F3-4751-A21D-EEAFBA9E123E}.lib-opts|Win32.Build.0 = lib-opts|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-dbg|Win32.ActiveCfg = dll-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-dbg|Win32.Build.0 = dll-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-opt|Win32.ActiveCfg = dll-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.dll-opt|Win32.Build.0 = dll-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-dbg|Win32.ActiveCfg = lib-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-dbg|Win32.Build.0 = lib-dbg|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opt|Win32.ActiveCfg = lib-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opt|Win32.Build.0 = lib-opt|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opts|Win32.ActiveCfg = lib-opts|Win32
+		{73298AF3-2AEF-47B8-83E4-6EA83AEBAED6}.lib-opts|Win32.Build.0 = lib-opts|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-dbg|Win32.ActiveCfg = dll-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-dbg|Win32.Build.0 = dll-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-opt|Win32.ActiveCfg = dll-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.dll-opt|Win32.Build.0 = dll-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-dbg|Win32.ActiveCfg = lib-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-dbg|Win32.Build.0 = lib-dbg|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opt|Win32.ActiveCfg = lib-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opt|Win32.Build.0 = lib-opt|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opts|Win32.ActiveCfg = lib-opts|Win32
+		{279BA2F5-5259-4337-8FFD-6460C94A23C3}.lib-opts|Win32.Build.0 = lib-opts|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
