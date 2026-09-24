@@ -52,8 +52,9 @@ Each version folder contains the project configuration for that compiler.
 
 ## Requirements
 
-- **Windows** (Windows API (Win32 | X64), MFC)
+- **Windows** (Windows API Win32 or x64)
 - **Microsoft Visual Studio** (2003 or later)
+- **MFC** (for `tolmfc`)
 - **MySQL** (for `tolmysql`)
 - Optional: **Windows CE** support for embedded targets
 
