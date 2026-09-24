@@ -82,7 +82,6 @@
     <None Include="..\prj\tolmysql\module.def">
       <Filter>Source Files\Project</Filter>
     </None>
-    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\prj\tolmysql\dll.rc">
