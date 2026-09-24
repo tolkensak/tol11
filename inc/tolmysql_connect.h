@@ -16,18 +16,18 @@ TOLNS_MYSQL_BEGIN
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLConn
+// class MySQLConnect
 //
 
-class TOLMYSQLDECL MySQLConn : public SmartObject
+class TOLMYSQLDECL MySQLConnect : public SmartObject
 {
 //private:
-//	MySQLConn(const MySQLConn&);
-//	void operator=(const MySQLConn&);
+//	MySQLConnect(const MySQLConnect&);
+//	void operator=(const MySQLConnect&);
 
 public:
-	MySQLConn();
-	virtual ~MySQLConn();
+	MySQLConnect();
+	virtual ~MySQLConnect();
 
 	operator bool() _CONST_;
 	operator PMYSQL();
@@ -52,10 +52,10 @@ public:
 	PCCharA Info() _CONST_;
 	Bool Init();
 	Uhuge InsertId() _CONST_;
-	MySQLResPtr ListDB(PCCharA pcWild) _CONST_;
-	MySQLResPtr ListFields(PCCharA pcTable, PCCharA pcWild) _CONST_;
-	MySQLResPtr ListProcesses() _CONST_;
-	MySQLResPtr ListTables(PCCharA pcWild) _CONST_;
+	MySQLResultPtr ListDB(PCCharA pcWild) _CONST_;
+	MySQLResultPtr ListFields(PCCharA pcTable, PCCharA pcWild) _CONST_;
+	MySQLResultPtr ListProcesses() _CONST_;
+	MySQLResultPtr ListTables(PCCharA pcWild) _CONST_;
 	Bool MoreResults() _CONST_;
 	int NextResult() _CONST_;
 	int Options(enum mysql_option option, PCVoid pArg);
@@ -73,17 +73,17 @@ public:
 	PCCharA SQLState() _CONST_;
 	void SSLSet(PCCharA pcKey, PCCharA pcCert, PCCharA pcCa, PCCharA pcCapath, PCCharA pcCipher);
 	PCCharA Stat() _CONST_;
-	MySQLResPtr StoreResult() _CONST_;
+	MySQLResultPtr StoreResult() _CONST_;
 	Ulong ThreadId() _CONST_;
-	MySQLResPtr UseResult() _CONST_;
+	MySQLResultPtr UseResult() _CONST_;
 	Uint WarningCount() _CONST_;
 
 protected:
 	PMYSQL m_pMySQL;
 };
 
-#ifndef _TOL_MYSQLCONNPTR
-typedef SmartPointer<MySQLConn> MySQLConnPtr;
+#ifndef _TOL_MYSQLCONNECTPTR
+typedef SmartPointer<MySQLConnect> MySQLConnectPtr;
 #endif
 
 

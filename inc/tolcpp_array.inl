@@ -274,7 +274,7 @@ Array<T, A>::Shrink()
 #endif
 
 	if(m_nCount)
-		m_pData=(T*)Mem_Realloc(0, m_pData, nCountMax*sizeof(T));
+		m_pData=(T*)Mem_Realloc(0, m_pData, m_nCountMax*sizeof(T));
 
 	m_nCountMax=m_nCount;
 }

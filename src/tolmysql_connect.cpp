@@ -8,24 +8,24 @@ TOLNS_MYSQL_BEGIN
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLConn
+// class MySQLConnect
 //
 
-MySQLConn::MySQLConn()
+MySQLConnect::MySQLConnect()
 	: m_pMySQL(NULL)
 {
 }
 
-//MySQLConn::MySQLConn(const MySQLConn&)
+//MySQLConnect::MySQLConnect(const MySQLConnect&)
 //{
 //}
 
-MySQLConn::~MySQLConn()
+MySQLConnect::~MySQLConnect()
 {
 	Close();
 }
 
-//void MySQLConn::operator=(const MySQLConn&)
+//void MySQLConnect::operator=(const MySQLConnect&)
 //{
 //}
 

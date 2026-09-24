@@ -72,7 +72,7 @@ public:
 	int Comapre(PCCharW pc, int nCount=-1) const;
 
 	StringW Token(PCCharW pcToken, int& nStart);
-	BOOL EnvVar(PCCharW pcVarName);
+	Bool EnvVar(PCCharW pcVarName);
 
 	void ChangeEndian();
 

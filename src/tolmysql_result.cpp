@@ -8,31 +8,31 @@ TOLNS_MYSQL_BEGIN
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLRes
+// class MySQLResult
 //
 
-MySQLRes::MySQLRes()
+MySQLResult::MySQLResult()
 	: m_pConn(NULL)
 	, m_pRes(NULL)
 {
 }
 
-//MySQLRes::MySQLRes(const MySQLRes&)
+//MySQLResult::MySQLResult(const MySQLResult&)
 //{
 //}
 
-MySQLRes::MySQLRes(const MySQLConn* pConn, PMYSQL_RES pRes)
+MySQLResult::MySQLResult(const MySQLConnect* pConn, PMYSQL_RES pRes)
 	: m_pConn(pConn)
 	, m_pRes(pRes)
 {
 }
 
-MySQLRes::~MySQLRes()
+MySQLResult::~MySQLResult()
 {
 	FreeResult();
 }
 
-//void MySQLRes::operator=(const MySQLRes&)
+//void MySQLResult::operator=(const MySQLResult&)
 //{
 //}
 

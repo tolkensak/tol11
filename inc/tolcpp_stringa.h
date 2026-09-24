@@ -72,7 +72,7 @@ public:
 	int Comapre(PCCharA pc, int nCount=-1) const;
 
 	StringA Token(PCCharA pcToken, int& nStart);
-	BOOL EnvVar(PCCharA pcVarName);
+	Bool EnvVar(PCCharA pcVarName);
 
 	StringA Left(int nCount);
 	StringA Right(int nCount);

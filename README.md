@@ -76,7 +76,7 @@ Each version folder contains the project configuration for that compiler.
 
 ## Example Usage
 
-**Using tolc (Pure C)**
+### Using tolc (Pure C)
 
 ```c
 #include <stdio.h>
@@ -99,6 +99,102 @@ int main()
 	Array_Kill(arr);
 }
 ```
+
+### Using tolcpp (C++)
+
+```c++
+#include <iostream>
+#include <tolcpp_array.h>
+#include <tolcpp_string.h>
+
+int main()
+{
+    tol::Array<tol::StringA> arr;
+
+    arr.Add("Hello");
+    arr.Add("World!");
+
+    arr.Insert(1, ", ");
+
+    for (int i = 0; i < arr.Count(); i++) {
+        std::cout << arr[i];
+    }
+}
+```
+
+**Using tolmfc (MFC)**
+
+```c++
+#include <tolmfc_winapp.h> // This should be placed in precompiled header file
+
+// App.h header file
+
+class App : public TWinApp
+{
+public:
+	App();
+	virtual ~App();
+	virtual BOOL InitInstance();
+
+protected:
+	virtual int ExitInstance();
+
+	DECLARE_MESSAGE_MAP()
+};
+```
+
+```c++
+#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file
+
+// App.cpp source file
+
+#include "stdafx.h"
+#include "App.h"
+#include "MainWnd.h"
+
+BEGIN_MESSAGE_MAP(App, TWinApp)
+END_MESSAGE_MAP()
+
+
+App::App()
+{
+}
+
+App::~App()
+{
+}
+
+App theApp;	// The one and only App object
+
+
+BOOL App::InitInstance()
+{
+	TWinApp::InitInstance();
+
+	SetRegistryKey();
+
+	MainWnd* pFrame=new MainWnd;
+	if(!pFrame)
+		return FALSE;
+
+	m_pMainWnd=pFrame;
+
+	if(!pFrame->LoadFrame(IDR_MAIN, WS_OVERLAPPEDWINDOW|FWS_ADDTOTITLE, NULL, NULL))
+		return FALSE;
+
+	pFrame->ShowWindow(m_uStartedTimes==1?SW_SHOWNORMAL:m_nCmdShow);
+	pFrame->UpdateWindow();
+
+	return TRUE;
+}
+
+int App::ExitInstance() 
+{
+	return TWinApp::ExitInstance();
+}
+```
+
+TWinApp provides its own AboutDlg, adjusts the application's registry key when calling the SetRegistryKey() method, and places recently opened files in a submenu.
 
 <br />
 

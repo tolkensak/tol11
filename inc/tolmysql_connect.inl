@@ -15,23 +15,23 @@ TOLNS_MYSQL_BEGIN
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLConn
+// class MySQLConnect
 //
 
 TOLINL
-MySQLConn::operator bool() _CONST_
+MySQLConnect::operator bool() _CONST_
 {
 	return m_pMySQL!=NULL;
 }
 
 TOLINL
-MySQLConn::operator PMYSQL()
+MySQLConnect::operator PMYSQL()
 {
 	return m_pMySQL;
 }
 
 TOLINL
-Uhuge MySQLConn::AffectedRows() _CONST_
+Uhuge MySQLConnect::AffectedRows() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -41,7 +41,7 @@ Uhuge MySQLConn::AffectedRows() _CONST_
 }
 
 TOLINL
-int MySQLConn::AutoCommit(Bool bMode) _CONST_
+int MySQLConnect::AutoCommit(Bool bMode) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -51,7 +51,7 @@ int MySQLConn::AutoCommit(Bool bMode) _CONST_
 }
 
 TOLINL
-int MySQLConn::ChangeUser(PCCharA pcUser, PCCharA pcPassword, PCCharA pcDB)
+int MySQLConnect::ChangeUser(PCCharA pcUser, PCCharA pcPassword, PCCharA pcDB)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -61,7 +61,7 @@ int MySQLConn::ChangeUser(PCCharA pcUser, PCCharA pcPassword, PCCharA pcDB)
 }
 
 TOLINL
-PCCharA MySQLConn::CharacterSetName()
+PCCharA MySQLConnect::CharacterSetName()
 {
 	_ASSERTE(m_pMySQL);
 
@@ -71,7 +71,7 @@ PCCharA MySQLConn::CharacterSetName()
 }
 
 TOLINL
-void MySQLConn::Close()
+void MySQLConnect::Close()
 {
 	if(m_pMySQL)
 	{
@@ -81,7 +81,7 @@ void MySQLConn::Close()
 }
 
 TOLINL
-int MySQLConn::Commit() _CONST_
+int MySQLConnect::Commit() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -91,7 +91,7 @@ int MySQLConn::Commit() _CONST_
 }
 
 //TOLINL
-//int MySQLConn::CreateDB(PCCharA pcDB)
+//int MySQLConnect::CreateDB(PCCharA pcDB)
 //{
 //	_ASSERTE(m_pMySQL);
 //
@@ -101,7 +101,7 @@ int MySQLConn::Commit() _CONST_
 //}
 //
 //TOLINL
-//int MySQLConn::DropDB(PCCharA pcDB)
+//int MySQLConnect::DropDB(PCCharA pcDB)
 //{
 //	_ASSERTE(m_pMySQL);
 //
@@ -111,7 +111,7 @@ int MySQLConn::Commit() _CONST_
 //}
 
 TOLINL
-Uint MySQLConn::Errno() _CONST_
+Uint MySQLConnect::Errno() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -121,7 +121,7 @@ Uint MySQLConn::Errno() _CONST_
 }
 
 TOLINL
-PCCharA MySQLConn::Error() _CONST_
+PCCharA MySQLConnect::Error() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -131,7 +131,7 @@ PCCharA MySQLConn::Error() _CONST_
 }
 
 TOLINL
-Uint MySQLConn::FieldCount() _CONST_
+Uint MySQLConnect::FieldCount() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -141,7 +141,7 @@ Uint MySQLConn::FieldCount() _CONST_
 }
 
 TOLINL
-void MySQLConn::GetCharacterSetInfo(PMY_CHARSET_INFO pInfo) _CONST_
+void MySQLConnect::GetCharacterSetInfo(PMY_CHARSET_INFO pInfo) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -151,7 +151,7 @@ void MySQLConn::GetCharacterSetInfo(PMY_CHARSET_INFO pInfo) _CONST_
 }
 
 TOLINL
-PCCharA MySQLConn::GetHostInfo() _CONST_
+PCCharA MySQLConnect::GetHostInfo() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -161,7 +161,7 @@ PCCharA MySQLConn::GetHostInfo() _CONST_
 }
 
 TOLINL
-Uint MySQLConn::GetProtoInfo() _CONST_
+Uint MySQLConnect::GetProtoInfo() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -171,7 +171,7 @@ Uint MySQLConn::GetProtoInfo() _CONST_
 }
 
 TOLINL
-PCCharA MySQLConn::GetServerInfo() _CONST_
+PCCharA MySQLConnect::GetServerInfo() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -181,7 +181,7 @@ PCCharA MySQLConn::GetServerInfo() _CONST_
 }
 
 TOLINL
-Ulong MySQLConn::GetServerVersion() _CONST_
+Ulong MySQLConnect::GetServerVersion() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -191,7 +191,7 @@ Ulong MySQLConn::GetServerVersion() _CONST_
 }
 
 TOLINL
-PCCharA MySQLConn::GetSSLCipher() _CONST_
+PCCharA MySQLConnect::GetSSLCipher() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -201,7 +201,7 @@ PCCharA MySQLConn::GetSSLCipher() _CONST_
 }
 
 TOLINL
-PCCharA MySQLConn::Info() _CONST_
+PCCharA MySQLConnect::Info() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -211,14 +211,14 @@ PCCharA MySQLConn::Info() _CONST_
 }
 
 TOLINL
-Bool MySQLConn::Init()
+Bool MySQLConnect::Init()
 {
 	m_pMySQL=mysql_init(m_pMySQL);
 	return m_pMySQL!=NULL;
 }
 
 TOLINL
-Uhuge MySQLConn::InsertId() _CONST_
+Uhuge MySQLConnect::InsertId() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -228,47 +228,47 @@ Uhuge MySQLConn::InsertId() _CONST_
 }
 
 TOLINL
-MySQLResPtr MySQLConn::ListDB(PCCharA pcWild) _CONST_
+MySQLResultPtr MySQLConnect::ListDB(PCCharA pcWild) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_list_dbs(m_pMySQL, pcWild));
+	return new MySQLResult(this, mysql_list_dbs(m_pMySQL, pcWild));
 }
 
 TOLINL
-MySQLResPtr MySQLConn::ListFields(PCCharA pcTable, PCCharA pcWild) _CONST_
+MySQLResultPtr MySQLConnect::ListFields(PCCharA pcTable, PCCharA pcWild) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_list_fields(m_pMySQL, pcTable, pcWild));
+	return new MySQLResult(this, mysql_list_fields(m_pMySQL, pcTable, pcWild));
 }
 
 TOLINL
-MySQLResPtr MySQLConn::ListProcesses() _CONST_
+MySQLResultPtr MySQLConnect::ListProcesses() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_list_processes(m_pMySQL));
+	return new MySQLResult(this, mysql_list_processes(m_pMySQL));
 }
 
 TOLINL
-MySQLResPtr MySQLConn::ListTables(PCCharA pcWild) _CONST_
+MySQLResultPtr MySQLConnect::ListTables(PCCharA pcWild) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_list_tables(m_pMySQL, pcWild));
+	return new MySQLResult(this, mysql_list_tables(m_pMySQL, pcWild));
 }
 
 TOLINL
-Bool MySQLConn::MoreResults() _CONST_
+Bool MySQLConnect::MoreResults() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -278,7 +278,7 @@ Bool MySQLConn::MoreResults() _CONST_
 }
 
 TOLINL
-int MySQLConn::NextResult() _CONST_
+int MySQLConnect::NextResult() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -288,7 +288,7 @@ int MySQLConn::NextResult() _CONST_
 }
 
 TOLINL
-int MySQLConn::Options(enum mysql_option option, PCVoid pArg)
+int MySQLConnect::Options(enum mysql_option option, PCVoid pArg)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -298,7 +298,7 @@ int MySQLConn::Options(enum mysql_option option, PCVoid pArg)
 }
 
 TOLINL
-int MySQLConn::Ping() _CONST_
+int MySQLConnect::Ping() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -308,7 +308,7 @@ int MySQLConn::Ping() _CONST_
 }
 
 TOLINL
-int MySQLConn::Query(PCCharA pcStmt) _CONST_
+int MySQLConnect::Query(PCCharA pcStmt) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -318,14 +318,14 @@ int MySQLConn::Query(PCCharA pcStmt) _CONST_
 }
 
 TOLINL
-Bool MySQLConn::RealConnect(PCCharA pcHost, PCCharA pcUser, PCCharA pcPassword, PCCharA pcDB, Uint uPort, PCCharA pcUnixSocket, Ulong ulClientFlags)
+Bool MySQLConnect::RealConnect(PCCharA pcHost, PCCharA pcUser, PCCharA pcPassword, PCCharA pcDB, Uint uPort, PCCharA pcUnixSocket, Ulong ulClientFlags)
 {
 	m_pMySQL=mysql_real_connect(m_pMySQL, pcHost, pcUser, pcPassword, pcDB, uPort, pcUnixSocket, ulClientFlags);
 	return m_pMySQL!=NULL;
 }
 
 TOLINL
-Ulong MySQLConn::RealEscapeString(PCharA pcDest, PCCharA pcSrc, Ulong ulLength) _CONST_
+Ulong MySQLConnect::RealEscapeString(PCharA pcDest, PCCharA pcSrc, Ulong ulLength) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -335,7 +335,7 @@ Ulong MySQLConn::RealEscapeString(PCharA pcDest, PCCharA pcSrc, Ulong ulLength) 
 }
 
 TOLINL
-int MySQLConn::RealQuery(PCCharA pcStmt, Ulong ulLength) _CONST_
+int MySQLConnect::RealQuery(PCCharA pcStmt, Ulong ulLength) _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -345,7 +345,7 @@ int MySQLConn::RealQuery(PCCharA pcStmt, Ulong ulLength) _CONST_
 }
 
 TOLINL
-int MySQLConn::Refresh(Uint uOptions)
+int MySQLConnect::Refresh(Uint uOptions)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -355,7 +355,7 @@ int MySQLConn::Refresh(Uint uOptions)
 }
 
 TOLINL
-Bool MySQLConn::Rollback() _CONST_
+Bool MySQLConnect::Rollback() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -365,7 +365,7 @@ Bool MySQLConn::Rollback() _CONST_
 }
 
 TOLINL
-int MySQLConn::SelectDB(PCCharA pcDB)
+int MySQLConnect::SelectDB(PCCharA pcDB)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -375,7 +375,7 @@ int MySQLConn::SelectDB(PCCharA pcDB)
 }
 
 TOLINL
-int MySQLConn::SetCharacterSet(PCCharA pcCS)
+int MySQLConnect::SetCharacterSet(PCCharA pcCS)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -385,7 +385,7 @@ int MySQLConn::SetCharacterSet(PCCharA pcCS)
 }
 
 TOLINL
-int MySQLConn::SetServerOption(enum enum_mysql_set_option option)
+int MySQLConnect::SetServerOption(enum enum_mysql_set_option option)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -395,7 +395,7 @@ int MySQLConn::SetServerOption(enum enum_mysql_set_option option)
 }
 
 TOLINL
-int MySQLConn::SetShutdown(enum mysql_enum_shutdown_level level)
+int MySQLConnect::SetShutdown(enum mysql_enum_shutdown_level level)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -405,7 +405,7 @@ int MySQLConn::SetShutdown(enum mysql_enum_shutdown_level level)
 }
 
 TOLINL
-PCCharA MySQLConn::SQLState() _CONST_
+PCCharA MySQLConnect::SQLState() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -415,7 +415,7 @@ PCCharA MySQLConn::SQLState() _CONST_
 }
 
 TOLINL
-void MySQLConn::SSLSet(PCCharA pcKey, PCCharA pcCert, PCCharA pcCa, PCCharA pcCapath, PCCharA pcCipher)
+void MySQLConnect::SSLSet(PCCharA pcKey, PCCharA pcCert, PCCharA pcCa, PCCharA pcCapath, PCCharA pcCipher)
 {
 	_ASSERTE(m_pMySQL);
 
@@ -425,7 +425,7 @@ void MySQLConn::SSLSet(PCCharA pcKey, PCCharA pcCert, PCCharA pcCa, PCCharA pcCa
 }
 
 TOLINL
-PCCharA MySQLConn::Stat() _CONST_
+PCCharA MySQLConnect::Stat() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -435,17 +435,17 @@ PCCharA MySQLConn::Stat() _CONST_
 }
 
 TOLINL
-MySQLResPtr MySQLConn::StoreResult() _CONST_
+MySQLResultPtr MySQLConnect::StoreResult() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_store_result(m_pMySQL));
+	return new MySQLResult(this, mysql_store_result(m_pMySQL));
 }
 
 TOLINL
-Ulong MySQLConn::ThreadId() _CONST_
+Ulong MySQLConnect::ThreadId() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
@@ -455,17 +455,17 @@ Ulong MySQLConn::ThreadId() _CONST_
 }
 
 TOLINL
-MySQLResPtr MySQLConn::UseResult() _CONST_
+MySQLResultPtr MySQLConnect::UseResult() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
 	_TOLMYSQL_CONNECT_THROW_EXCEPTION
 
-	return new MySQLRes(this, mysql_use_result(m_pMySQL));
+	return new MySQLResult(this, mysql_use_result(m_pMySQL));
 }
 
 TOLINL
-Uint MySQLConn::WarningCount() _CONST_
+Uint MySQLConnect::WarningCount() _CONST_
 {
 	_ASSERTE(m_pMySQL);
 
