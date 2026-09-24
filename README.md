@@ -125,10 +125,12 @@ int main()
 
 ### Using tolmfc (MFC)
 
+A minimal MFC application using `tol::TWinApp` and `tol::MainWnd`:
+
 ```c++
 // App.h header file
 
-#include <tolmfc_winapp.h> // This should be placed in precompiled header file
+#include <tolmfc_winapp.h> // This should be placed in precompiled header file (stdafx.h)
 
 class App : public tol::TWinApp
 {
@@ -147,9 +149,8 @@ protected:
 ```c++
 // App.cpp source file
 
-#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file
-
 #include "stdafx.h"
+#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file (stdafx.h)
 #include "App.h"
 #include "MainWnd.h"
 
@@ -202,6 +203,11 @@ TWinApp provides its own AboutDlg, adjusts the application's registry key when c
 And using SmartPointer, which is in tolcpp
 
 ```c++
+#include <tolcpp_array.h>
+#include <tolcpp_pointer.h>
+#include <tolcpp_stringa.h>
+#include <tolmysql_mysql.h>
+
 class User : public tol::SmartObject
 {
 public:
@@ -220,6 +226,7 @@ protected:
 
 typedef tol::SmartPointer<User> UserPtr;
 typedef tol::Array<UserPtr> UserPtrArray;
+
 
 UserPtrArray GetGroupUsers(int nGroupId)
 {
@@ -267,6 +274,18 @@ UserPtrArray GetGroupUsers(int nGroupId)
 | 2017 | Visual Studio 2017 support |
 | 2019 | Visual Studio 2019 support |
 | 2026 | Version 1.1 released publicly on GitHub |
+
+<br />
+
+## Status
+
+| Library | Status |
+|---------|--------|
+| tolc | ✅ Stable |
+| tolcpp | ✅ Stable |
+| tolmfc | ✅ Stable |
+| tolmysql | ✅ Stable |
+| **tolxml** | ⚠️ **Requires MSXML update** — see issue tracker |
 
 <br />
 

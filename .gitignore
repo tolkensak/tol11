@@ -5,6 +5,29 @@ lib/
 int/
 .vs/
 
+# Build artifacts
+*.lib
+*.dll
+*.pdb
+*.exe
+*.obj
+*.o
+*.so
+*.dylib
+*.ilk
+*.exp
+*.idb
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+Debug/
+Release/
+x64/
+ipch/
+.vs/
+
 # IDE
 .vscode/
 .idea/
