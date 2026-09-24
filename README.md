@@ -123,14 +123,14 @@ int main()
 }
 ```
 
-**Using tolmfc (MFC)**
+### Using tolmfc (MFC)
 
 ```c++
-#include <tolmfc_winapp.h> // This should be placed in precompiled header file
-
 // App.h header file
 
-class App : public TWinApp
+#include <tolmfc_winapp.h> // This should be placed in precompiled header file
+
+class App : public tol::TWinApp
 {
 public:
 	App();
@@ -145,15 +145,15 @@ protected:
 ```
 
 ```c++
-#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file
-
 // App.cpp source file
+
+#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file
 
 #include "stdafx.h"
 #include "App.h"
 #include "MainWnd.h"
 
-BEGIN_MESSAGE_MAP(App, TWinApp)
+BEGIN_MESSAGE_MAP(App, tol::TWinApp)
 END_MESSAGE_MAP()
 
 
@@ -170,11 +170,11 @@ App theApp;	// The one and only App object
 
 BOOL App::InitInstance()
 {
-	TWinApp::InitInstance();
+	tol::TWinApp::InitInstance();
 
 	SetRegistryKey();
 
-	MainWnd* pFrame=new MainWnd;
+	tol::MainWnd* pFrame=new MainWnd;
 	if(!pFrame)
 		return FALSE;
 
@@ -191,11 +191,57 @@ BOOL App::InitInstance()
 
 int App::ExitInstance() 
 {
-	return TWinApp::ExitInstance();
+	return tol::TWinApp::ExitInstance();
 }
 ```
 
 TWinApp provides its own AboutDlg, adjusts the application's registry key when calling the SetRegistryKey() method, and places recently opened files in a submenu.
+
+### Using tolmysql
+
+And using SmartPointer, which is in tolcpp
+
+```c++
+class User : public tol::SmartObject
+{
+public:
+	User(int nId, char* pcName)
+    {
+        m_nId=nId;
+        m_strName=pcName;
+    }
+
+    virtual ~User(){}
+
+protected:
+	int m_nId;
+    tol::StringA m_strName;
+};
+
+typedef tol::SmartPointer<User> UserPtr;
+typedef tol::Array<UserPtr> UserPtrArray;
+
+UserPtrArray GetGroupUsers(int nGroupId)
+{
+	tol::MySQLConnectPtr pConn=new tol::MySQLConnect;
+
+	tol::StringA strQuery;
+    strQuery.Format("SELECT id, user FROM users WHERE group_id = %d", nGroupId);
+
+	pConn->RealQuery(strQuery, strQuery.Len());
+
+	tol::MySQLResultPtr pRes=pConn->StoreResult();
+
+    UserPtrArray arrUsers;
+	MYSQL_ROW row;
+
+	while(row=pRes->FetchRow()) {
+		arrUsers.Add(new User(atoi(row[0]), row[1]));
+    }
+
+    return arrUsers;
+}
+```
 
 <br />
 
