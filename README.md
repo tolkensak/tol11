@@ -98,6 +98,8 @@ int main()
 	}
 
 	Array_Kill(arr);
+
+    return 0;
 }
 ```
 
@@ -120,6 +122,8 @@ int main()
     for (int i = 0; i < arr.Count(); i++) {
         std::cout << arr[i];
     }
+
+    return 0;
 }
 ```
 
