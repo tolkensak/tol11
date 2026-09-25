@@ -106,7 +106,7 @@ int main()
 ```c++
 #include <iostream>
 #include <tolcpp_array.h>
-#include <tolcpp_string.h>
+#include <tolcpp_stringa.h>
 
 int main()
 {
