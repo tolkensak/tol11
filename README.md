@@ -173,7 +173,6 @@ App::~App(){}
 
 App theApp;	// The one and only App object
 
-
 BOOL App::InitInstance()
 {
 	TWinApp::InitInstance();
@@ -241,7 +240,6 @@ UserPtrArray GetGroupUsers(int nGroupId)
 
 	StringA strQuery;
     strQuery.Format("SELECT id, user FROM users WHERE group_id = %d", nGroupId);
-
 	pConn->RealQuery(strQuery);
 
 	MYSQL_ROW row;
