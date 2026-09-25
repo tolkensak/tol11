@@ -110,9 +110,11 @@ int main()
 #include <tolcpp_array.h>
 #include <tolcpp_stringa.h>
 
+using namespace tol;
+
 int main()
 {
-    tol::Array<tol::StringA> arr;
+    Array<StringA> arr;
 
     arr.Add("Hello");
     arr.Add("World!");
@@ -137,8 +139,9 @@ A minimal MFC application using `tol::TWinApp` and `tol::TMainWnd`:
 #include <tolmfc_winapp.h> // This should be placed in precompiled header file stdafx.h
 #include <tolmfc_mainwnd.h> // This should be placed in precompiled header file stdafx.h
 
+using namespace tol;
 
-class App : public tol::TWinApp
+class App : public TWinApp
 {
 public:
 	App();
@@ -159,24 +162,21 @@ protected:
 #include "App.h"
 #include "MainWnd.h"
 
-BEGIN_MESSAGE_MAP(App, tol::TWinApp)
+using namespace tol;
+
+BEGIN_MESSAGE_MAP(App, TWinApp)
 END_MESSAGE_MAP()
 
+App::App(){}
 
-App::App()
-{
-}
-
-App::~App()
-{
-}
+App::~App(){}
 
 App theApp;	// The one and only App object
 
 
 BOOL App::InitInstance()
 {
-	tol::TWinApp::InitInstance();
+	TWinApp::InitInstance();
 
 	SetRegistryKey();
 
@@ -197,7 +197,7 @@ BOOL App::InitInstance()
 
 int App::ExitInstance() 
 {
-	return tol::TWinApp::ExitInstance();
+	return TWinApp::ExitInstance();
 }
 ```
 
@@ -213,7 +213,10 @@ And using SmartPointer, which is in tolcpp
 #include <tolcpp_stringa.h>
 #include <tolmysql_mysql.h>
 
-class User : public tol::SmartObject
+using namespace tol;
+using namespace tol::mysql;
+
+class User : public SmartObject
 {
 public:
 	User(int nId, char* pcName)
@@ -226,26 +229,24 @@ public:
 
 protected:
 	int m_nId;
-    tol::StringA m_strName;
+    StringA m_strName;
 };
 
-typedef tol::SmartPointer<User> UserPtr;
-typedef tol::Array<UserPtr> UserPtrArray;
-
+typedef SmartPointer<User> UserPtr;
+typedef Array<UserPtr> UserPtrArray;
 
 UserPtrArray GetGroupUsers(int nGroupId)
 {
-	tol::MySQLConnectPtr pConn=new tol::MySQLConnect;
+	ConnectionPtr pConn=new Connection("host", "user", "password", "db");
 
-	tol::StringA strQuery;
+	StringA strQuery;
     strQuery.Format("SELECT id, user FROM users WHERE group_id = %d", nGroupId);
 
-	pConn->RealQuery(strQuery, strQuery.Len());
+	pConn->RealQuery(strQuery);
 
-	tol::MySQLResultPtr pRes=pConn->StoreResult();
-
-    UserPtrArray arrUsers;
 	MYSQL_ROW row;
+    UserPtrArray arrUsers;
+	ResultPtr pRes=pConn->StoreResult();
 
 	while(row=pRes->FetchRow()) {
 		arrUsers.Add(new User(atoi(row[0]), row[1]));

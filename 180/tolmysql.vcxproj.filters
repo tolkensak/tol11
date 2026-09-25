@@ -27,7 +27,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\tolmysql_connect.cpp">
+    <ClCompile Include="..\src\tolmysql_connection.cpp">
       <Filter>Source Files\Library</Filter>
     </ClCompile>
     <ClCompile Include="..\src\tolmysql_mysql.cpp">
@@ -50,7 +50,7 @@
     <ClInclude Include="..\inc\tolmysql.h">
       <Filter>Header Files\Library</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\tolmysql_connect.h">
+    <ClInclude Include="..\inc\tolmysql_connection.h">
       <Filter>Header Files\Library</Filter>
     </ClInclude>
     <ClInclude Include="..\inc\tolmysql_mysql.h">
@@ -70,7 +70,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\inc\tolmysql_connect.inl">
+    <None Include="..\inc\tolmysql_connection.inl">
       <Filter>Header Files\Library</Filter>
     </None>
     <None Include="..\inc\tolmysql_mysql.inl">

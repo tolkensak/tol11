@@ -10,13 +10,13 @@ TOLNS_BEGIN
 
 
 TOLINL
-int Exception::Code() const
+int Exception::GetCode() const
 {
 	return m_nCode;
 }
 
 TOLINL
-void Exception::Code(int nCode)
+void Exception::SetCode(int nCode)
 {
 	m_nCode=nCode;
 }

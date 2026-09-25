@@ -13,18 +13,18 @@ TOLNS_BEGIN
 
 class TOLCPPDECL Exception : public Object
 {
+protected:
+	Exception();
+
 private:
 	Exception(const Exception&);
 	void operator=(const Exception&);
 
-protected:
-	Exception();
-
 public:
 	virtual ~Exception()=0;
 
-	int Code() const;
-	void Code(int nCode);
+	int GetCode() const;
+	void SetCode(int nCode);
 
 protected:
 	int m_nCode;
@@ -33,17 +33,32 @@ protected:
 
 class TOLCPPDECL ArgException : public Exception
 {
-//#if _MSC_VER < 1400
+public:
+	ArgException();
+	virtual ~ArgException();
+
+	//#if _MSC_VER < 1400
 public:
 //#else
 //private:
 //#endif
 	ArgException(const ArgException&);
 	void operator=(const ArgException&);
+};
 
+class TOLCPPDECL RuntimeException : public Exception
+{
 public:
-	ArgException();
-	virtual ~ArgException();
+	RuntimeException();
+	virtual ~RuntimeException();
+	
+//#if _MSC_VER < 1400
+public:
+//#else
+//private:
+//#endif
+	RuntimeException(const RuntimeException&);
+	void operator=(const RuntimeException&);
 };
 
 

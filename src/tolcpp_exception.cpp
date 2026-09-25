@@ -40,4 +40,22 @@ void ArgException::operator=(const ArgException&)
 }
 
 
+
+RuntimeException::RuntimeException()
+{
+}
+
+RuntimeException::RuntimeException(const RuntimeException&)
+{
+}
+
+RuntimeException::~RuntimeException()
+{
+}
+
+void RuntimeException::operator=(const RuntimeException&)
+{
+}
+
+
 TOLNS_END

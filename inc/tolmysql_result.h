@@ -12,23 +12,23 @@
 TOLNS_MYSQL_BEGIN
 
 
-class MySQLConnect;
+class Connection;
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLResult
+// class Result
 //
 
-class TOLMYSQLDECL MySQLResult : public SmartObject
+class TOLMYSQLDECL Result : public SmartObject
 {
 //private:
-//	MySQLResult(const MySQLResult&);
-//	void operator=(const MySQLResult&);
+//	Result(const Result&);
+//	void operator=(const Result&);
 
 public:
-	MySQLResult();
-	MySQLResult(const MySQLConnect* pConn, PMYSQL_RES pRes);
-	virtual ~MySQLResult();
+	Result();
+	Result(const Connection* pConn, PMYSQL_RES pRes);
+	virtual ~Result();
 
 	operator bool() const;
 	operator PMYSQL_RES();
@@ -48,11 +48,11 @@ public:
 	MYSQL_ROW_OFFSET RowTell();
 
 protected:
-	const MySQLConnect* m_pConn;
+	const Connection* m_pConn;
 	PMYSQL_RES m_pRes;
 };
 
-typedef SmartPointer<MySQLResult> MySQLResultPtr;
+typedef SmartPointer<Result> ResultPtr;
 
 
 TOLNS_MYSQL_END

@@ -16,23 +16,23 @@ TOLNS_MYSQL_BEGIN
 
 //////////////////////////////////////////////////////////////////////////
 //
-// class MySQLResult
+// class Result
 //
 
 TOLINL
-MySQLResult::operator bool() const
+Result::operator bool() const
 {
 	return m_pRes!=NULL;
 }
 
 TOLINL
-MySQLResult::operator PMYSQL_RES()
+Result::operator PMYSQL_RES()
 {
 	return m_pRes;
 }
 
 TOLINL
-void MySQLResult::DataSeek(Uhuge uhOffset)
+void Result::DataSeek(Uhuge uhOffset)
 {
 	_ASSERTE(m_pRes);
 
@@ -42,7 +42,7 @@ void MySQLResult::DataSeek(Uhuge uhOffset)
 }
 
 TOLINL
-PMYSQL_FIELD MySQLResult::FetchField()
+PMYSQL_FIELD Result::FetchField()
 {
 	_ASSERTE(m_pRes);
 
@@ -52,7 +52,7 @@ PMYSQL_FIELD MySQLResult::FetchField()
 }
 
 TOLINL
-PMYSQL_FIELD MySQLResult::FetchFieldDirect(Uint uField)
+PMYSQL_FIELD Result::FetchFieldDirect(Uint uField)
 {
 	_ASSERTE(m_pRes);
 
@@ -62,7 +62,7 @@ PMYSQL_FIELD MySQLResult::FetchFieldDirect(Uint uField)
 }
 
 TOLINL
-PMYSQL_FIELD MySQLResult::FetchFields()
+PMYSQL_FIELD Result::FetchFields()
 {
 	_ASSERTE(m_pRes);
 
@@ -72,7 +72,7 @@ PMYSQL_FIELD MySQLResult::FetchFields()
 }
 
 TOLINL
-PUlong MySQLResult::FetchLengths()
+PUlong Result::FetchLengths()
 {
 	_ASSERTE(m_pRes);
 
@@ -82,7 +82,7 @@ PUlong MySQLResult::FetchLengths()
 }
 
 TOLINL
-MYSQL_ROW MySQLResult::FetchRow()
+MYSQL_ROW Result::FetchRow()
 {
 	_ASSERTE(m_pRes);
 
@@ -92,7 +92,7 @@ MYSQL_ROW MySQLResult::FetchRow()
 }
 
 TOLINL
-Uint MySQLResult::FieldSeek(Uint uOffset)
+Uint Result::FieldSeek(Uint uOffset)
 {
 	_ASSERTE(m_pRes);
 
@@ -102,7 +102,7 @@ Uint MySQLResult::FieldSeek(Uint uOffset)
 }
 
 TOLINL
-Uint MySQLResult::FieldTell()
+Uint Result::FieldTell()
 {
 	_ASSERTE(m_pRes);
 
@@ -113,7 +113,7 @@ Uint MySQLResult::FieldTell()
 
 
 TOLINL
-void MySQLResult::FreeResult()
+void Result::FreeResult()
 {
 	if(m_pRes)
 	{
@@ -123,7 +123,7 @@ void MySQLResult::FreeResult()
 }
 
 TOLINL
-Uint MySQLResult::NumFields()
+Uint Result::NumFields()
 {
 	_ASSERTE(m_pRes);
 
@@ -133,7 +133,7 @@ Uint MySQLResult::NumFields()
 }
 
 TOLINL
-Uhuge MySQLResult::NumRows()
+Uhuge Result::NumRows()
 {
 	_ASSERTE(m_pRes);
 
@@ -143,7 +143,7 @@ Uhuge MySQLResult::NumRows()
 }
 
 TOLINL
-MYSQL_ROW_OFFSET MySQLResult::RowSeek(MYSQL_ROW_OFFSET offset)
+MYSQL_ROW_OFFSET Result::RowSeek(MYSQL_ROW_OFFSET offset)
 {
 	_ASSERTE(m_pRes);
 
@@ -153,7 +153,7 @@ MYSQL_ROW_OFFSET MySQLResult::RowSeek(MYSQL_ROW_OFFSET offset)
 }
 
 TOLINL
-MYSQL_ROW_OFFSET MySQLResult::RowTell()
+MYSQL_ROW_OFFSET Result::RowTell()
 {
 	_ASSERTE(m_pRes);
 

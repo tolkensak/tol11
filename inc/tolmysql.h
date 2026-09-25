@@ -37,6 +37,7 @@
 #include <crtdbg.h> // _ASSERTE
 #include <tolcpp_exception.h>
 #include <tolcpp_pointer.h>
+#include <tolcpp_stringa.h>
 
 
 #include <winsock.h>

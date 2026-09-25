@@ -7,7 +7,7 @@
 #endif
 
 #include <tolmysql.h>
-#include <tolmysql_connect.h>
+#include <tolmysql_connection.h>
 
 
 TOLNS_MYSQL_BEGIN

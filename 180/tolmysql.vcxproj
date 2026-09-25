@@ -339,14 +339,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-dbg|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='dll-dbg|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\src\tolmysql_connect.cpp" />
+    <ClCompile Include="..\src\tolmysql_connection.cpp" />
     <ClCompile Include="..\src\tolmysql_mysql.cpp" />
     <ClCompile Include="..\src\tolmysql_result.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\inc\tol.h" />
     <ClInclude Include="..\inc\tolmysql.h" />
-    <ClInclude Include="..\inc\tolmysql_connect.h" />
+    <ClInclude Include="..\inc\tolmysql_connection.h" />
     <ClInclude Include="..\inc\tolmysql_mysql.h" />
     <ClInclude Include="..\inc\tolmysql_result.h" />
     <ClInclude Include="..\prj\tolmysql\resource.h" />
@@ -354,7 +354,7 @@
     <ClInclude Include="..\prj\tolmysql\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\inc\tolmysql_connect.inl" />
+    <None Include="..\inc\tolmysql_connection.inl" />
     <None Include="..\inc\tolmysql_mysql.inl" />
     <None Include="..\inc\tolmysql_result.inl" />
     <None Include="..\prj\tolmysql\module.def" />
