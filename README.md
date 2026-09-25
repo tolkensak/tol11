@@ -130,7 +130,9 @@ A minimal MFC application using `tol::TWinApp` and `tol::MainWnd`:
 ```c++
 // App.h header file
 
-#include <tolmfc_winapp.h> // This should be placed in precompiled header file (stdafx.h)
+#include <tolmfc_winapp.h> // This should be placed in precompiled header file stdafx.h
+#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file stdafx.h
+
 
 class App : public tol::TWinApp
 {
@@ -150,7 +152,6 @@ protected:
 // App.cpp source file
 
 #include "stdafx.h"
-#include <tolmfc_mainwnd.h> // This should be placed in precompiled header file (stdafx.h)
 #include "App.h"
 #include "MainWnd.h"
 
@@ -175,7 +176,7 @@ BOOL App::InitInstance()
 
 	SetRegistryKey();
 
-	tol::MainWnd* pFrame=new MainWnd;
+	MainWnd* pFrame=new MainWnd;
 	if(!pFrame)
 		return FALSE;
 
