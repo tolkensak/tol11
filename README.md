@@ -125,7 +125,7 @@ int main()
 
 ### Using tolmfc (MFC)
 
-A minimal MFC application using `tol::TWinApp` and `tol::MainWnd`:
+A minimal MFC application using `tol::TWinApp` and `tol::TMainWnd`:
 
 ```c++
 // App.h header file
